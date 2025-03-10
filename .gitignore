@@ -1,0 +1,20 @@
+# 通用
+.DS_Store
+node_modules/
+dist/
+build/
+.env
+*.log
+*.tmp
+
+# 编辑器
+.idea/
+.vscode/
+
+# 前端特定
+/public/**/*.jpg   # 如果图片是静态资源且需要保留，可删除此行
+/the-wild-oasis_frontend/.env
+
+# 后端特定
+/the-wild-oasis_backend/config.env
+/the-wild-oasis_backend/data/**/*.jpg

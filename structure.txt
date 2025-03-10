@@ -1,0 +1,204 @@
+.
+├── structure.txt
+├── the-wild-oasis_backend
+│   ├── app.js
+│   ├── config.env
+│   ├── controllers
+│   │   ├── authController.js
+│   │   ├── bookingController.js
+│   │   ├── cabinController.js
+│   │   ├── errorController.js
+│   │   ├── guestController.js
+│   │   ├── settingController.js
+│   │   └── userController.js
+│   ├── converted-bookings.json
+│   ├── data
+│   │   ├── bookings-simple.json
+│   │   ├── cabins
+│   │   │   ├── cabin-001.jpg
+│   │   │   ├── cabin-002.jpg
+│   │   │   ├── cabin-003.jpg
+│   │   │   ├── cabin-004.jpg
+│   │   │   ├── cabin-006.jpg
+│   │   │   ├── cabin-007.jpg
+│   │   │   ├── cabin-008.jpg
+│   │   │   └── cabin-009.jpg
+│   │   ├── cabins-simple.json
+│   │   ├── convert-bookings.js
+│   │   ├── data-bookings.js
+│   │   ├── data-guests.js
+│   │   ├── guests-simple.json
+│   │   ├── import-dev-data.js
+│   │   └── updateJsonWithImageUrls.js
+│   ├── models
+│   │   ├── bookingModels.js
+│   │   ├── cabinModels.js
+│   │   ├── guestModels.js
+│   │   ├── settingModels.js
+│   │   └── userModels.js
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── routes
+│   │   ├── bookingRoutes.js
+│   │   ├── cabinRoutes.js
+│   │   ├── guestRoutes.js
+│   │   ├── imageRoutes.js
+│   │   ├── settingRoutes.js
+│   │   └── userRoutes.js
+│   ├── server.js
+│   ├── structure.txt
+│   └── utils
+│       ├── apiFeatures.js
+│       ├── appError.js
+│       ├── catchAsync.js
+│       ├── email.js
+│       ├── gridfs.js
+│       └── multer.js
+└── the-wild-oasis_frontend
+    ├── index.html
+    ├── package-lock.json
+    ├── package.json
+    ├── public
+    │   ├── default-user.jpg
+    │   ├── logo-dark.png
+    │   ├── logo-light.png
+    │   └── vite.svg
+    ├── src
+    │   ├── App.jsx
+    │   ├── context
+    │   │   └── DarkModeContext.jsx
+    │   ├── data
+    │   │   ├── Uploader.js
+    │   │   ├── cabins
+    │   │   │   ├── cabin-001.jpg
+    │   │   │   ├── cabin-002.jpg
+    │   │   │   ├── cabin-003.jpg
+    │   │   │   ├── cabin-004.jpg
+    │   │   │   ├── cabin-005.jpg
+    │   │   │   ├── cabin-006.jpg
+    │   │   │   ├── cabin-007.jpg
+    │   │   │   └── cabin-008.jpg
+    │   │   ├── data-bookings.js
+    │   │   ├── data-cabins.js
+    │   │   └── data-guests.js
+    │   ├── features
+    │   │   ├── authentication
+    │   │   │   ├── LoginForm.jsx
+    │   │   │   ├── Logout.jsx
+    │   │   │   ├── SignupFrom.jsx
+    │   │   │   ├── UpdatePasswordForm.jsx
+    │   │   │   ├── UpdateUserDataForm.jsx
+    │   │   │   ├── UserAvatar.jsx
+    │   │   │   ├── useLogin.js
+    │   │   │   ├── useLogout.js
+    │   │   │   ├── useSignup.js
+    │   │   │   └── useUser.js
+    │   │   ├── bookings
+    │   │   │   ├── BookingDataBox.jsx
+    │   │   │   ├── BookingDetail.jsx
+    │   │   │   ├── BookingRow.jsx
+    │   │   │   ├── BookingTable.jsx
+    │   │   │   ├── BookingTableOperations.jsx
+    │   │   │   ├── useBooking.js
+    │   │   │   ├── useBookings.js
+    │   │   │   └── useDeleteBooking.js
+    │   │   ├── cabins
+    │   │   │   ├── AddCabin.jsx
+    │   │   │   ├── CabinRow-v1.jsx
+    │   │   │   ├── CabinRow.jsx
+    │   │   │   ├── CabinTable-v1.jsx
+    │   │   │   ├── CabinTable.jsx
+    │   │   │   ├── CabinTableOperations.jsx
+    │   │   │   ├── CreateCabinForm.jsx
+    │   │   │   ├── useCabinMutation.js
+    │   │   │   └── useCabins.js
+    │   │   ├── check-in-out
+    │   │   │   ├── CheckinBooking.jsx
+    │   │   │   ├── CheckoutButton.jsx
+    │   │   │   ├── TodayActivity.jsx
+    │   │   │   ├── useCheckin.js
+    │   │   │   ├── useCheckout.js
+    │   │   │   └── useTodayActivity.js
+    │   │   ├── dashboard
+    │   │   │   ├── DashboardBox.jsx
+    │   │   │   ├── DashboardFilter.jsx
+    │   │   │   ├── DashboardLayout.jsx
+    │   │   │   ├── DurationChart.jsx
+    │   │   │   ├── SalesChart.jsx
+    │   │   │   ├── Stat.jsx
+    │   │   │   ├── Stats.jsx
+    │   │   │   ├── TodayItem.jsx
+    │   │   │   ├── useRecentBookings.js
+    │   │   │   └── useRecentStays.js
+    │   │   └── settings
+    │   │       ├── UpdateSettingsForm.jsx
+    │   │       ├── useCabinMutation.js
+    │   │       └── useSettings.js
+    │   ├── hooks
+    │   │   ├── useLocalStorageState.js
+    │   │   ├── useMoveBack.js
+    │   │   └── useOutsideClick.js
+    │   ├── lib
+    │   │   ├── constants
+    │   │   │   └── index.js
+    │   │   ├── services
+    │   │   │   ├── apiAuth.js
+    │   │   │   ├── apiBookings.js
+    │   │   │   ├── apiCabins.js
+    │   │   │   └── apiSettings.js
+    │   │   └── ui
+    │   │       ├── AppLayout.jsx
+    │   │       ├── Button.jsx
+    │   │       ├── ButtonGroup.jsx
+    │   │       ├── ButtonIcon.jsx
+    │   │       ├── ButtonText.jsx
+    │   │       ├── Checkbox.jsx
+    │   │       ├── ConfirmDelete.jsx
+    │   │       ├── DarkModeToggle.jsx
+    │   │       ├── DataItem.jsx
+    │   │       ├── Empty.jsx
+    │   │       ├── ErrorFallback.jsx
+    │   │       ├── FileInput.jsx
+    │   │       ├── Filter.jsx
+    │   │       ├── Flag.jsx
+    │   │       ├── Form.jsx
+    │   │       ├── FormRow.jsx
+    │   │       ├── Header.jsx
+    │   │       ├── HeaderMenu.jsx
+    │   │       ├── Heading.jsx
+    │   │       ├── Input.jsx
+    │   │       ├── Logo.jsx
+    │   │       ├── MainNav.jsx
+    │   │       ├── Menus.jsx
+    │   │       ├── Modal.jsx
+    │   │       ├── Pagination.jsx
+    │   │       ├── ProtectedRoute.jsx
+    │   │       ├── Row.jsx
+    │   │       ├── Select.jsx
+    │   │       ├── Sidebar.jsx
+    │   │       ├── SortBy.jsx
+    │   │       ├── Spinner.jsx
+    │   │       ├── SpinnerMini.jsx
+    │   │       ├── Table.jsx
+    │   │       ├── TableOperations.jsx
+    │   │       ├── Tag.jsx
+    │   │       └── Textarea.jsx
+    │   ├── main.jsx
+    │   ├── pages
+    │   │   ├── Account.jsx
+    │   │   ├── Booking.jsx
+    │   │   ├── Bookings.jsx
+    │   │   ├── Cabins.jsx
+    │   │   ├── Checkin.jsx
+    │   │   ├── Dashboard.jsx
+    │   │   ├── Login.jsx
+    │   │   ├── PageNotFound.jsx
+    │   │   ├── Settings.jsx
+    │   │   └── Users.jsx
+    │   ├── styles
+    │   │   └── GlobalStyles.js
+    │   └── utils
+    │       └── helpers.js
+    └── vite.config.js
+
+29 directories, 173 files

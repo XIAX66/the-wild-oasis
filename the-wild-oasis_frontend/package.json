@@ -1,0 +1,37 @@
+{
+  "name": "the-wild-oasis",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.21.0",
+    "@tanstack/react-query": "^4.36.1",
+    "@tanstack/react-query-devtools": "^5.66.9",
+    "axios": "^1.8.1",
+    "date-fns": "^4.1.0",
+    "js-cookie": "^3.0.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-error-boundary": "^5.0.0",
+    "react-hook-form": "^7.54.2",
+    "react-hot-toast": "^2.5.2",
+    "react-icons": "^4.8.0",
+    "react-router-dom": "^6.11.1",
+    "recharts": "^2.15.1",
+    "styled-components": "^5.3.10"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-react": "^3.1.0",
+    "eslint": "^8.39.0",
+    "eslint-config-react-app": "^7.0.1",
+    "vite": "^4.2.0",
+    "vite-plugin-eslint": "^1.8.1"
+  }
+}
